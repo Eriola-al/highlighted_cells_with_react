@@ -24,8 +24,7 @@ const Table = () => {
     if (!select) return "";
 
     let [endRow, endCol] = select;
-
-    if ((row === endRow && col <= endCol) || (col == endCol && row < endRow)) {
+    if ((row === endRow && col <= endCol) || (col === endCol && row < endRow)) {
       return "Selected";
     }
   };
